@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRIAN-10 Koping Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f9f9;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #3aafa9;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    main {
+      max-width: 700px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    h1 {
+      color: #17252a;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question p {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    button {
+      background: #3aafa9;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #2b7a78;
+    }
+    #result {
+      margin-top: 25px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #def2f1;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: #17252a;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌿 SRIAN-10 Koping Quiz</h1>
+    <p>Cari tahu gaya Anda dalam menghadapi stres!</p>
+  </header>
+
+  <main>
+    <form id="quizForm">
+      <!-- Pertanyaan 1 -->
+      <div class="question">
+        <p>1. Ketika menghadapi masalah besar, saya…</p>
+        <label><input type="radio" name="q1" value="A"> Mencari solusi langkah demi langkah</label>
+        <label><input type="radio" name="q1" value="B"> Menunda, berharap masalah hilang sendiri</label>
+        <label><input type="radio" name="q1" value="C"> Marah atau frustrasi</label>
+      </div>
+
+      <!-- Pertanyaan 2 -->
+      <div class="question">
+        <p>2. Saat saya stres, saya biasanya…</p>
+        <label><input type="radio" name="q2" value="A"> Bicara dengan teman/keluarga untuk dukungan</label>
+        <label><input type="radio" name="q2" value="B"> Menyalahkan diri sendiri</label>
+        <label><input type="radio" name="q2" value="C"> Menghindari orang lain</label>
+      </div>
+
+      <!-- Pertanyaan 3 -->
+      <div class="question">
+        <p>3. Untuk menenangkan diri, saya…</p>
+        <label><input type="radio" name="q3" value="A"> Melakukan relaksasi, olahraga, atau aktivitas positif</label>
+        <label><input type="radio" name="q3" value="B"> Merokok/minum alkohol/menggunakan zat lain</label>
+        <label><input type="radio" name="q3" value="C"> Membiarkan rasa lelah terus berlarut</label>
+      </div>
+
+      <!-- Pertanyaan 4 -->
+      <div class="question">
+        <p>4. Jika mengalami kegagalan, saya…</p>
+        <label><input type="radio" name="q4" value="A"> Belajar dari pengalaman</label>
+        <label><input type="radio" name="q4" value="B"> Mengabaikan kegagalan seolah tidak terjadi</label>
+        <label><input type="radio" name="q4" value="C"> Menyalahkan diri sendiri</label>
+      </div>
+
+      <!-- Pertanyaan 5 -->
+      <div class="question">
+        <p>5. Saat menghadapi tekanan, saya…</p>
+        <label><input type="radio" name="q5" value="A"> Berfokus pada hal-hal positif</label>
+        <label><input type="radio" name="q5" value="B"> Menunda-nunda pekerjaan</label>
+        <label><input type="radio" name="q5" value="C"> Merasa tidak berdaya</label>
+      </div>
+
+      <!-- Pertanyaan 6 -->
+      <div class="question">
+        <p>6. Ketika ada konflik dengan orang lain, saya…</p>
+        <label><input type="radio" name="q6" value="A"> Mencoba berkomunikasi dengan baik</label>
+        <label><input type="radio" name="q6" value="B"> Menghindari pembicaraan</label>
+        <label><input type="radio" name="q6" value="C"> Menjadi defensif atau marah</label>
+      </div>
+
+      <!-- Pertanyaan 7 -->
+      <div class="question">
+        <p>7. Saat merasa cemas, saya…</p>
+        <label><input type="radio" name="q7" value="A"> Bernapas dalam-dalam atau meditasi</label>
+        <label><input type="radio" name="q7" value="B"> Sibuk dengan hal-hal lain untuk melupakan</label>
+        <label><input type="radio" name="q7" value="C"> Panik atau kehilangan kontrol</label>
+      </div>
+
+      <!-- Pertanyaan 8 -->
+      <div class="question">
+        <p>8. Jika ada banyak pekerjaan menumpuk, saya…</p>
+        <label><input type="radio" name="q8" value="A"> Membuat daftar prioritas</label>
+        <label><input type="radio" name="q8" value="B"> Mengulur waktu</label>
+        <label><input type="radio" name="q8" value="C"> Merasa kewalahan dan marah</label>
+      </div>
+
+      <!-- Pertanyaan 9 -->
+      <div class="question">
+        <p>9. Saat mendapat kritik, saya…</p>
+        <label><input type="radio" name="q9" value="A"> Menerima dan mencoba memperbaiki</label>
+        <label><input type="radio" name="q9" value="B"> Mengabaikan kritik tersebut</label>
+        <label><input type="radio" name="q9" value="C"> Merasa tersinggung atau sakit hati</label>
+      </div>
+
+      <!-- Pertanyaan 10 -->
+      <div class="question">
+        <p>10. Untuk mengurangi stres sehari-hari, saya…</p>
+        <label><input type="radio" name="q10" value="A"> Melakukan hobi atau aktivitas menyenangkan</label>
+        <label><input type="radio" name="q10" value="B"> Menonton TV/scroll media sosial berlebihan</label>
+        <label><input type="radio" name="q10" value="C"> Mengeluh dan menyalahkan keadaan</label>
+      </div>
+
+      <button type="button" onclick="calculateResult()">Lihat Hasil</button>
+    </form>
+
+    <div id="result"></div>
+  </main>
+
+  <footer>
+    <p>✨ Catatan: Tes ini bukan diagnosis, hanya alat bantu refleksi diri.</p>
+  </footer>
+
+  <script>
+    function calculateResult() {
+      const form = document.forms["quizForm"];
+      let counts = {A:0, B:0, C:0};
+
+      for (let i = 1; i <= 10; i++) {
+        const answer = form["q"+i].value;
+        if (answer) counts[answer]++;
+      }
+
+      let resultText = "";
+      if (counts.A > counts.B && counts.A > counts.C) {
+        resultText = "<h3>🌟 Strategi Koping Adaptif (Sehat)</h3>" +
+                     "<p>Anda cenderung menghadapi stres dengan cara positif, seperti mencari solusi, mencari dukungan, dan mengelola emosi. ✅ Pertahankan kebiasaan baik ini.</p>";
+      } else if (counts.B > counts.A && counts.B > counts.C) {
+        resultText = "<h3>⚖ Strategi Koping Menghindar</h3>" +
+                     "<p>Anda sering menunda atau mengabaikan masalah. Cobalah lebih banyak strategi adaptif, misalnya membuat rencana kecil atau bercerita pada orang dekat.</p>";
+      } else if (counts.C > counts.A && counts.C > counts.B) {
+        resultText = "<h3>⚠ Strategi Koping Emosi Negatif</h3>" +
+                     "<p>Anda cenderung marah, merasa tidak berdaya, atau menyalahkan diri sendiri. Pola ini bisa memperburuk stres. Cobalah mengganti dengan cara positif: olahraga ringan, menulis jurnal, atau cari dukungan dari konselor/teman dekat.</p>";
+      } else {
+        resultText = "<h3>🔄 Hasil Campuran</h3>" +
+                     "<p>Anda menggunakan beberapa strategi sekaligus. Perhatikan mana yang lebih sering muncul dan coba perkuat strategi adaptif.</p>";
+      }
+
+      document.getElementById("result").innerHTML = resultText;
+    }
+  </script>
+</body>
+</html>
